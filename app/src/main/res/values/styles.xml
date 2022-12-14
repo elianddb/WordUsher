@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Create a new style called "AppTheme" -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Set the primary color of the app -->
+        <item name="colorPrimary">#3F51B5</item>
+        <!-- Set the accent color of the app -->
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Set the background color of the dialog -->
+        <item name="android:windowBackground">@color/dialog_background</item>
+<!--        &lt;!&ndash; Set the color of the title text &ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">@color/dialog_title_text</item>-->
+<!--        &lt;!&ndash; Set the color of the message text &ndash;&gt;-->
+<!--        <item name="android:textColorSecondary">@color/dialog_message_text</item>-->
+<!--        &lt;!&ndash; Set the color of the buttons &ndash;&gt;-->
+<!--        <item name="android:colorAccent">@color/dialog_button_color</item>-->
+    </style>
+
+    <color name="dialog_background">#2C2B2B</color>
+</resources>

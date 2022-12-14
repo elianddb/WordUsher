@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#505353"
+    tools:context=".GameResult">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/game_result_border"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="61dp">
+
+        <TextView
+            android:id="@+id/result_time0"
+            android:layout_width="440dp"
+            android:layout_height="60dp"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/console_text"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/vt323"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.209"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.376"
+            tools:text="time 1" />
+
+        <TextView
+            android:id="@+id/result_time2"
+            android:layout_width="440dp"
+            android:layout_height="60dp"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#20C04B"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/vt323"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.209"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.643"
+            tools:text="time 3" />
+
+        <TextView
+            android:id="@+id/result_time1"
+            android:layout_width="440dp"
+            android:layout_height="60dp"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#20C04B"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/vt323"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.209"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512"
+            tools:text="time 2" />
+
+        <TextView
+            android:id="@+id/result_stars"
+            android:layout_width="161dp"
+            android:layout_height="198dp"
+            android:gravity="right"
+            android:rotation="90"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#20C04B"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/vt323"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.91"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48000002"
+            tools:text="✭✭✭" />
+
+        <TextView
+            android:id="@+id/result_header"
+            android:layout_width="441dp"
+            android:layout_height="103dp"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#20C14B"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/vt323"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.129"
+            tools:text="Placeholder" />
+
+        <Button
+            android:id="@+id/button_to_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_result_border"
+            android:fontFamily="@font/vt323"
+            android:text="Back to menu?"
+            android:textColor="@color/console_text"
+            android:visibility="invisible"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.87"
+            tools:textColor="#20C04B" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
