@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.logging.Level;
+
 public class GameResult extends MediaManager.MediaActivity {
     public static final long SHOW_LETTER_DELAY = 100;
     public static final long NEXT_ACTIVITY_DELAY = 1000;
@@ -92,8 +94,12 @@ public class GameResult extends MediaManager.MediaActivity {
         TextView starsText = findViewById(R.id.result_stars);
         starsText.setText(stars);
 
-        FileManager.modifyLineInFile(this, LevelSelect.STARS_GRADES_FILE,
+        int previousStars = Integer.parseInt(FileManager
+                .readLineFromFile(this, LevelSelect.STARS_GRADES_FILE, levelIndex));
+        if (previousStars < count) {
+            FileManager.modifyLineInFile(this, LevelSelect.STARS_GRADES_FILE,
                     levelIndex, String.valueOf(count));
+        }
     }
 
     public void makeMenuButtonAvailable() {
