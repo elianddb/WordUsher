@@ -2,6 +2,7 @@ package com.elianddb.android.wordusherdev;
 
 import android.content.Context;
 import android.media.MediaPlayer;
+import android.view.View;
 
 public class MediaManager {
     private static MediaPlayer mediaPlayer;
@@ -56,6 +57,16 @@ public class MediaManager {
             super.onResume();
             if (userLeft) {
                 MediaManager.resume();
+            }
+        }
+
+        @Override
+        public void onWindowFocusChanged(boolean hasFocus) {
+            super.onWindowFocusChanged(hasFocus);
+            if (hasFocus) {
+                View decorView = getWindow().getDecorView();
+                int flags = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE;
+                decorView.setSystemUiVisibility(flags);
             }
         }
     }

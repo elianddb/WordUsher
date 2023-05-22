@@ -16,4 +16,9 @@
     <string name="not_enough_letters">To start a custom game, your word needs to contain at least two letters.</string>
     <string name="button_start">START</string>
     <string name="button_custom">CUSTOM</string>
+    <string name="level_select">Level Select</string>
+    <string name="assist_blue_robot_iris">Blue Robot Iris</string>
+    <string name="assist_level_1_plants">Level 1: Plants</string>
+    <string name="assist_level_2_computers">Level 2: Computers</string>
+    <string name="assist_level_3_sci_fi">Level 3: Sci-Fi</string>
 </resources>

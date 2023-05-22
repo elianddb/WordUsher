@@ -12,8 +12,9 @@
         android:layout_height="116dp"
         android:fontFamily="@font/vt323"
         android:gravity="center"
-        android:text="Level Select"
+        android:text="@string/level_select"
         android:textSize="60sp"
+        android:textColor="@color/robot_iris"
         app:layout_constraintBottom_toTopOf="@+id/levels"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -78,7 +79,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:background="@drawable/nature_icon" />
+            android:background="@drawable/nature_icon"
+            android:contentDescription="@string/assist_level_1_plants"/>
 
         <ImageButton
             android:id="@+id/level_button_1"
@@ -87,7 +89,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:background="@drawable/computers_icon" />
+            android:background="@drawable/computers_icon"
+            android:contentDescription="@string/assist_level_2_computers"/>
 
         <ImageButton
             android:id="@+id/level_button_2"
@@ -95,7 +98,8 @@
             android:layout_height="130dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/scifi_icon" />
+            android:background="@drawable/scifi_icon"
+            android:contentDescription="@string/assist_level_3_sci_fi"/>
 
     </LinearLayout>
 
